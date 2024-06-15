@@ -1,0 +1,17 @@
+name: Code Review with OpenAI
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+jobs:
+  node:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Code Review
+        uses: nishtahir/conventional-gpt@main
+        with:
+          model: "gpt-4o"
+    
