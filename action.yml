@@ -1,0 +1,21 @@
+name: 'conventional-gpt'
+description: 'Github Action to use GPT to run code'
+author: 'Nish Tahir'
+
+branding:
+  icon: 'code'
+  color: 'green'
+
+inputs:
+  model:
+    description: 'Model to use for Review generation'
+    required: false
+    default: 'gpt-4o'
+  conventions-file:
+    description: 'Your input description here'
+    required: false
+    default: '.github/CONVENTIONS.md'
+
+runs:
+  using: node20
+  main: dist/index.js
