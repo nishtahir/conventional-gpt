@@ -27492,12 +27492,8 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.run = void 0;
 const github = __importStar(__nccwpck_require__(5438));
-/**
- * The main function for the action.
- * @returns {Promise<void>} Resolves when the action is complete.
- */
 async function run() {
-    console.log(github.context);
+    console.log(JSON.stringify(github.context, null, 2));
     console.log("Success...");
 }
 exports.run = run;
