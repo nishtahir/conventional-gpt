@@ -1,4 +1,4 @@
-**Prompt: TypeScript Code Review**
+**TypeScript Code Review Conventions**
 
 As an expert in TypeScript development, your task is to review the following TypeScript code. Your primary focus should be on ensuring adherence to TypeScript best practices and maintaining consistency throughout the codebase. Below are specific areas you should pay attention to:
 
