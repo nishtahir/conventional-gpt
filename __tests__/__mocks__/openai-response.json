@@ -1,0 +1,33 @@
+{
+  "id": "chatcmpl-9bYd5PNQKsvLq28GKk3RfDRBha1ev",
+  "object": "chat.completion",
+  "created": 1718738279,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_8pzJeAxPrYQYU7IoKJPzZBwD",
+            "type": "function",
+            "function": {
+              "name": "post_review_comment",
+              "arguments": "{\"line\":1,\"comment\":\"The previous name 'Code Review with OpenAI' was more descriptive and provided context about what the workflow does and what service it uses. Consider keeping names descriptive for better clarity.\",\"side\":\"RIGHT\"}"
+            }
+          }
+        ]
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 934,
+    "completion_tokens": 56,
+    "total_tokens": 990
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

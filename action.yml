@@ -7,15 +7,24 @@ branding:
   color: 'green'
 
 inputs:
+  openai-api-key:
+    description: 'OpenAI API Key'
+    required: true
+  github-token:
+    description: 'Github Token'
+    required: true
   model:
     description: 'Model to use for Review generation'
     required: false
     default: 'gpt-4o'
   conventions-file:
-    description: 'Your input description here'
+    description: 'Path to base code quality conventions'
     required: false
     default: '.github/CONVENTIONS.md'
-
+  exclude-files:
+    description: 'Files to exclude from review'
+    required: false
+    default: ''
 runs:
   using: node20
   main: dist/index.js
